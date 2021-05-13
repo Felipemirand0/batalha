@@ -2,7 +2,7 @@ package vessels;
 
 public class Submarine extends Vessel {
     public Submarine(char orientation, int startLine, int endLine) {
-        super(1, orientation, startLine, endLine);
+        super(2, orientation, startLine, endLine);
     }
 
     @Override
@@ -13,4 +13,6 @@ public class Submarine extends Vessel {
     public String toString() {
         return "";
     }
+    
+     
 }

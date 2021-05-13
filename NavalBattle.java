@@ -24,6 +24,7 @@ class NavalBattle {
 
         // Criando os embarcações
         Vessel submarine = new Submarine('h', 4 , 1);
+         Vessel teste = new Submarine('h', 4 , 1);
         Vessel aircraftCarrier = new AircraftCarrier('v', 0, 2);
         Vessel ship = new Ship('h', 4 , 5);
         
@@ -31,6 +32,7 @@ class NavalBattle {
         board.add(submarine);
         board.add(aircraftCarrier);
         board.add(ship);
+        board.add(teste);
 
         NavalBattle nb = new NavalBattle(board);
 
