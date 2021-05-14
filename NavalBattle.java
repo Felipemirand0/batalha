@@ -71,7 +71,6 @@ class NavalBattle {
         System.out.println("\n\n--------------------------------  Initial board ----------------------------------");
         board.showBoard();        
         System.out.println(" ---------------------------------------------------------------------------------  \n\n");
-
         
         // Navio atirando na posição (3 , 4): água
         nb.shoot(ship, 3, 4);
@@ -82,10 +81,10 @@ class NavalBattle {
         // Porta avioes atirando na posição (4 , 1) e (4 , 2): destruindo submarino!
         nb.shoot(aircraftCarrier, 4, 1);
         nb.shoot(aircraftCarrier, 4, 2);
+        // Submarino atirando na posição (4 , 1): não pode atirar
+        nb.shoot(submarine, 4, 1);
         // Porta avioes atirando na posição (0 , 2): tiro inválido!
         nb.shoot(aircraftCarrier, 0, 2);
-        // Submarino atirando na posição (4 , 1): não pode atirar
-        nb.shoot(submarine, 9, 9);
 
         System.out.println("\n\n -------------------------------  Final board ------------------------------------ ");
         board.showBoard();
