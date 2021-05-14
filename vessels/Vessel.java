@@ -4,20 +4,21 @@ import java.util.List;
 import java.util.ArrayList;
 
 public abstract class Vessel {
-
     public int width;
+    public int endLine;
+    public String name;
+    public int startLine;
     public char orientation;
     public boolean destroyed = false;
     public List<Integer> busyLine = new ArrayList<Integer>();
     public List<Integer> busyColumn = new ArrayList<Integer>();
-    public int startLine;
-    public int endLine;
 
-    public Vessel(int width, char orientation, int startLine, int endLine) {
+    public Vessel(int width, String name, char orientation, int startLine, int endLine) {
+        this.name = name;
         this.width = width;
-        this.orientation = orientation;
-        this.startLine = startLine;
         this.endLine = endLine;
+        this.startLine = startLine;
+        this.orientation = orientation;
 
         if (endLine + width > 10) {
 

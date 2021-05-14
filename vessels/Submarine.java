@@ -1,8 +1,8 @@
 package vessels;
 
 public class Submarine extends Vessel {
-    public Submarine(char orientation, int startLine, int endLine) {
-        super(2, orientation, startLine, endLine);
+    public Submarine(String name, char orientation, int startLine, int endLine) {
+        super(2, name, orientation, startLine, endLine);
     }
 
     @Override
@@ -11,7 +11,7 @@ public class Submarine extends Vessel {
     }
 
     public String toString() {
-        return "";
+        return "s";
     }
     
      

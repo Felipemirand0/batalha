@@ -1,8 +1,8 @@
 package vessels;
 
 public class AircraftCarrier extends Vessel {
-    public AircraftCarrier(char orientation, int startLine, int endLine) {
-        super(4, orientation, startLine, endLine);
+    public AircraftCarrier(String name, char orientation, int startLine, int endLine) {
+        super(4, name, orientation, startLine, endLine);
     }
 
     @Override
@@ -10,6 +10,6 @@ public class AircraftCarrier extends Vessel {
         this.destroyed = true;
     }
     public String toString() {
-        return "";
+        return "p";
     }
 }
