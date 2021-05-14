@@ -59,12 +59,16 @@ public class Board {
     }    
     
     public void showBoard() {
-        System.out.println("\t0 \t1 \t2 \t3 \t4 \t5 \t6 \t7 \t8 \t9");
+        System.out.println("|\t  \t  \t  \t  \t  \t  \t  \t  \t  \t  |");
+        System.out.println("|\t0 \t1 \t2 \t3 \t4 \t5 \t6 \t7 \t8 \t9 |");
         // atribuindo os valores da matriz e printando o board 
         for (int line = 0; line < 10; line++) {
-            System.out.print(line + "");
+            System.out.print("| " + line + "");
             for (int column = 0; column < 10; column++) {
                 System.out.print("\t" + this.board[line][column]);
+                if(column == 9) {
+                    System.out.print(" |");
+                }
             }
             System.out.println();
         }
